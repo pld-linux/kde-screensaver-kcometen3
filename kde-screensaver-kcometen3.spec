@@ -9,6 +9,7 @@ License:	GPL
 Group:		X11/Amusements
 Source0:	http://user.cs.tu-berlin.de/~pmueller/files/%{vendor_name}-%{version}.tar.gz
 # Source0-md5:	36f846b6a3e5f71c4532070b1f17b717
+Patch0:		kde-ac260.patch
 URL:		http://www.kde-apps.org/content/show.php?content=30313
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
@@ -30,6 +31,7 @@ KCometen3 to oparty na OpenGL wygaszacz ekranu dla KDE.
 
 %prep
 %setup -q -n %{vendor_name}-%{version}
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
@@ -41,6 +43,7 @@ cp -f /usr/share/automake/config.sub admin
 %endif
 	--%{?debug:en}%{!?debug:dis}able-debug%{?debug:=full} \
 	--with-qt-libraries=%{_libdir}
+
 %{__make}
 
 %install
