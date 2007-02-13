@@ -1,7 +1,7 @@
 %define		vendor_name kcometen3
 Summary:	KCometen3 - OpenGL screensaver for KDE
-Summary(de.UTF-8):   KCometen3 - ein KDE Bildschirmschoner
-Summary(pl.UTF-8):   KCometen3 - wygaszacz ekranu oparty na OpenGL dla KDE
+Summary(de.UTF-8):	KCometen3 - ein KDE Bildschirmschoner
+Summary(pl.UTF-8):	KCometen3 - wygaszacz ekranu oparty na OpenGL dla KDE
 Name:		kde-screensaver-%{vendor_name}
 Version:	1.1
 Release:	1
