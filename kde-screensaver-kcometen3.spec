@@ -4,12 +4,13 @@ Summary(de.UTF-8):	KCometen3 - ein KDE Bildschirmschoner
 Summary(pl.UTF-8):	KCometen3 - wygaszacz ekranu oparty na OpenGL dla KDE
 Name:		kde-screensaver-%{vendor_name}
 Version:	1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://user.cs.tu-berlin.de/~pmueller/files/%{vendor_name}-%{version}.tar.gz
 # Source0-md5:	36f846b6a3e5f71c4532070b1f17b717
 Patch0:		kde-ac260.patch
+Patch1:		%{name}-am.patch
 URL:		http://www.kde-apps.org/content/show.php?content=30313
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
@@ -32,6 +33,7 @@ KCometen3 to oparty na OpenGL wygaszacz ekranu dla KDE.
 %prep
 %setup -q -n %{vendor_name}-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
