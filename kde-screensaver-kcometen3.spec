@@ -4,7 +4,7 @@ Summary(de.UTF-8):	KCometen3 - ein KDE Bildschirmschoner
 Summary(pl.UTF-8):	KCometen3 - wygaszacz ekranu oparty na OpenGL dla KDE
 Name:		kde-screensaver-%{vendor_name}
 Version:	1.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://user.cs.tu-berlin.de/~pmueller/files/%{vendor_name}-%{version}.tar.gz
