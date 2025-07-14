@@ -32,8 +32,8 @@ KCometen3 to oparty na OpenGL wygaszacz ekranu dla KDE.
 
 %prep
 %setup -q -n %{vendor_name}-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
